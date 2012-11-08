@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  log_source: MyString
+  log_filename: MyString
+  log_datetime: 2012-11-07 18:14:19
+  log_channel: MyString
+  log_type: MyString
+  log_message: MyText
+
+two:
+  log_source: MyString
+  log_filename: MyString
+  log_datetime: 2012-11-07 18:14:19
+  log_channel: MyString
+  log_type: MyString
+  log_message: MyText

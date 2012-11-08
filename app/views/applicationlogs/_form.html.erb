@@ -1,0 +1,41 @@
+<%= form_for(@applicationlog) do |f| %>
+  <% if @applicationlog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@applicationlog.errors.count, "error") %> prohibited this applicationlog from being saved:</h2>
+
+      <ul>
+      <% @applicationlog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :log_source %><br />
+    <%= f.text_field :log_source %>
+  </div>
+  <div class="field">
+    <%= f.label :log_filename %><br />
+    <%= f.text_field :log_filename %>
+  </div>
+  <div class="field">
+    <%= f.label :log_datetime %><br />
+    <%= f.datetime_select :log_datetime %>
+  </div>
+  <div class="field">
+    <%= f.label :log_channel %><br />
+    <%= f.text_field :log_channel %>
+  </div>
+  <div class="field">
+    <%= f.label :log_type %><br />
+    <%= f.text_field :log_type %>
+  </div>
+  <div class="field">
+    <%= f.label :log_message %><br />
+    <%= f.text_area :log_message %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module ApplicationlogsHelper
+end

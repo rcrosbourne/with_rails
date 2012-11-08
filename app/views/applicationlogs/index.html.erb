@@ -1,0 +1,27 @@
+<h1>Listing applicationlogs</h1>
+
+<table>
+  <tr>
+    <th>Log source</th>
+    <th>Log filename</th>
+    <th>Log datetime</th>
+    <th>Log channel</th>
+    <th>Log type</th>
+    <th>Log message</th>    
+  </tr>
+
+<% @applicationlogs.each do |applicationlog| %>
+  <tr>
+    <td><%= applicationlog.log_source %></td>
+    <td><%= applicationlog.log_filename %></td>
+    <td><%= applicationlog.log_datetime %></td>
+    <td><%= applicationlog.log_channel %></td>
+    <td><%= applicationlog.log_type %></td>
+    <td><%= applicationlog.log_message %></td>    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Applicationlog', new_applicationlog_path %>

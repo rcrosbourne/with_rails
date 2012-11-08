@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Log source:</b>
+  <%= @applicationlog.log_source %>
+</p>
+
+<p>
+  <b>Log filename:</b>
+  <%= @applicationlog.log_filename %>
+</p>
+
+<p>
+  <b>Log datetime:</b>
+  <%= @applicationlog.log_datetime %>
+</p>
+
+<p>
+  <b>Log channel:</b>
+  <%= @applicationlog.log_channel %>
+</p>
+
+<p>
+  <b>Log type:</b>
+  <%= @applicationlog.log_type %>
+</p>
+
+<p>
+  <b>Log message:</b>
+  <%= @applicationlog.log_message %>
+</p>
+
+
+<%= link_to 'Edit', edit_applicationlog_path(@applicationlog) %> |
+<%= link_to 'Back', applicationlogs_path %>
